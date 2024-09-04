@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <style>
+      .bg-body.bg-blue {
+        background-color: #039ac1 !important;
+        margin-top: 30px;
+      }
+      .logo {
+        text-align: center;
+      }
+      .logo img {
+        border-radius: 6rem;
+        width: 25%;
+        margin-top: -15%;
+        box-shadow: 0px 1px 13px 8px rgba(0, 0, 0, 0.05);
+      }
+      .submit-button {
+        background-color: #039ac1 !important;
+        cursor: pointer;
+        color: white !important;
+      }
+      .submit-button:hover {
+        background-color: #0389aa !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css"
+    />
+  </head>
+
+  <body class="container-fluid bg-light bg-body bg-blue">
+    <form id="myForm" class="p-2" onsubmit="return submitForm(event)">
+      <div class="container mt-5 mb-5 d-flex justify-content-center">
+        <div class="card w-50 px-1 py-4 shadow">
+          <div class="logo">
+            <img
+              src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZJ0r6hJT_8ivI8kbWsqS_Tlp5vLjyWbuxy8aNvAiinqhZX_wU9bJqydGcERRFdvA0NCHQomKpNc9YeP_ROdritWEypz773RG8=s2560"
+              alt="rocket_contact"
+            />
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-center">
+              <h3>Support Help Desk BIGIO</h3>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="fullname" class="form-label"
+                    >Fullname<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your Fullname"
+                    autofocus
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="email" class="form-label"
+                    >Email<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your Email"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="issue" class="form-label"
+                    >Issue<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="issue"
+                    name="issue"
+                    placeholder="Enter your Issue"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="detail_issue" class="form-label"
+                    >Detail Issue<span class="text-danger">*</span></label
+                  >
+                  <textarea
+                    name="detail_issue"
+                    id="detail_issue"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Enter your Detail Issue"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="image" class="form-label"
+                    >Image<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="image"
+                    name="image"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="platform" class="form-label"
+                    >Platform<span class="text-danger">*</span></label
+                  >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="platform"
+                      id="flexRadioDefault1"
+                      value="website"
+                      checked
+                      required
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1"
+                      >Website</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="platform"
+                      id="flexRadioDefault2"
+                      value="ios"
+                      required
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2"
+                      >IOS</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="platform"
+                      id="flexRadioDefault3"
+                      value="android"
+                      required
+                    />
+                    <label class="form-check-label" for="flexRadioDefault3"
+                      >Android</label
+                    >
+                    <input type="hidden" id="project-key" name="project"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn submit-button confirm-button mt-3 w-100"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script>
+
+        function getFirstUrlParam() { // => ?project=tjsl
+        // Get the query string part of the URL
+        const queryString = window.location.search;
+
+        // Use URLSearchParams to parse the query string
+        const urlParams = new URLSearchParams(queryString);
+
+        // Get the first key in the URL parameters
+        const firstParamKey = urlParams.keys().next().value;
+
+        // Get the value associated with the first key
+        const firstParamValue = urlParams.get(firstParamKey);
+
+        return { key: firstParamKey, value: firstParamValue };
+      }
+
+      const firstParam = getFirstUrlParam();
+      console.log("sini ya ", firstParam)
+      document.getElementById('project-key').value = firstParam.value
+
+      function submitForm(event) {
+        console.log("test submit");
+
+        event.preventDefault();
+        try {
+          Swal.fire({
+            title: "Loading",
+            html: "Submit an Issue",
+            allowOutsideClick: false,
+            didOpen: () => {
+              Swal.showLoading();
+            },
+          });
+          const form = document.getElementById("myForm");
+          const formData = new FormData(form);
+
+          const formObject = {};
+          formData.forEach((value, key) => {
+            if (key === "image") {
+              console.log("value", value);
+              console.log("key", key);
+
+              const reader = new FileReader();
+              reader.onload = function (event) {
+                formObject[key] = event.target.result;
+
+                fetchData(formObject);
+              };
+              reader.readAsDataURL(value);
+            } else {
+              formObject[key] = value;
+            }
+          });
+
+        } catch (error) {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: error,
+          });
+        }
+      }
+
+      function fetchData(formObject) {
+        fetch(
+          "https://script.google.com/macros/s/AKfycbxMawYTP41EVEl1JrnlKPpEUvOIjKw_X794Rs1IWXimcyr2bg-m5HmRbUOH4wuhbScTEg/exec",
+          {
+            method: "POST",
+            body: JSON.stringify(formObject),
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then((response) => response.text())
+          .then((data) => {
+            submitSuccess(data);
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            alert("Form submission failed dari catch api");
+          });
+      }
+
+      function submitSuccess(response) {
+        Swal.fire({
+          title: "Success!",
+          text: "Successfully Submitted Issue!",
+          icon: "success",
+          confirmButtonText: "OK",
+        }).then(() => {
+          document.getElementById("myForm").reset();
+          Swal.close(); // Tutup SweetAlert2 setelah alert muncul
+        });
+      }
+    </script>
+  </body>
+</html>
