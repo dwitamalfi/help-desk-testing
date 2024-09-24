@@ -62,7 +62,7 @@
         <div class="card w-50 px-1 py-4 shadow">
           <div class="logo">
             <img
-              src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZJ0r6hJT_8ivI8kbWsqS_Tlp5vLjyWbuxy8aNvAiinqhZX_wU9bJqydGcERRFdvA0NCHQomKpNc9YeP_ROdritWEypz773RG8=s2560"
+              src="logo_bigio.png"
               alt="rocket_contact"
             />
           </div>
@@ -201,6 +201,8 @@
                       >Android</label
                     >
                     <input type="hidden" id="project-key" name="project"/>
+                    <input type="hidden" id="excel-link" name="link_excel"/>
+                    <input type="hidden" id="code-project" name="code_project"/>
                   </div>
                 </div>
               </div>
@@ -250,8 +252,17 @@
       }
 
       const firstParam = getFirstUrlParam();
-      console.log("sini ya ", firstParam)
       document.getElementById('project-key').value = firstParam.value
+
+      fetch('data.json')
+      .then(response => response.json()) // Parse the JSON
+      .then(data => {
+          let urlExcel = data.projects[firstParam.value].urlExcel
+          const id = urlExcel.split('/d/')[1].split('/')[0];
+          document.getElementById('excel-link').value = id;
+          document.getElementById('code-project').value = data.projects[firstParam.value].code;
+      })
+      .catch(error => console.error('Error loading the JSON:', error));
 
       function submitForm(event) {
         console.log("test submit");
@@ -298,7 +309,7 @@
 
       function fetchData(formObject) {
         fetch(
-          "https://script.google.com/macros/s/AKfycbzScX-u4ddGUqqVZDoMXX8dN_Jm-VVma-TeNfaUDFMT47rYrUwT32hm7Ap5d9d4_4jGtA/exec",
+          "https://script.google.com/macros/s/AKfycbxMKiVkp5W_Cwm8nzAiXWdEXEpnDoNbJaTnb19IbzBJFCWxqd4YQnoiul-7ewhenK7FmA/exec",
           {
             method: "POST",
             body: JSON.stringify(formObject),
