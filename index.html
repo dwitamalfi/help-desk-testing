@@ -72,8 +72,8 @@
             <div class="d-flex justify-content-center">
               <h3>Support Help Desk BIGIO</h3>
             </div>
-            <div class="d-flex justify-content-center">
-              <h3>(TJSL)</h3>
+            <div class="d-flex justify-content-center" id="project_title">
+              
             </div>
             <div class="row mt-3">
               <div class="col-sm-12">
@@ -268,12 +268,15 @@
           document.getElementById('excel-link').value = id;
           document.getElementById('code-project').value = data.projects[firstParam.value].code;
           document.getElementById('arr_receiver').value = data.projects[firstParam.value].dri;
+          // document.getElementById("project_title").value = data.projects[firstParam.value].name;
+          let title = document.getElementById("project_title")
+          const h3 = document.createElement('h3');
+          h3.textContent = data.projects[firstParam.value].name;
+          title.appendChild(h3);
       })
       .catch(error => console.error('Error loading the JSON:', error));
 
       function submitForm(event) {
-        console.log("test submit");
-
         event.preventDefault();
         try {
           Swal.fire({

@@ -3,82 +3,98 @@
         "PV":{
             "urlExcel": "https://docs.google.com/spreadsheets/d/1jRv5O--UWvF9saj8zda43RMDl47rpmpF30ce_AJg3LE/edit?usp=sharing",
             "code": "PV",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "Pharmacovigilance"
         },
         "SMS": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/1V0kaq9r-yp5bozldx4PpWHTLc7kdysquu6Ls6b74Bsg/edit?usp=sharing",
             "code": "SMS",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "SMS"
         },
         "TJSL": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/1XAx-FnruMH7Jr-_RTwJP--VEccYHPvhkn_zzf7sXMhU/edit?usp=sharing",
             "code": "TJSL",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "TJSL"
         },
         "Agrico": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/1x3ASxXh3oLT5lYqO6-N_8NwqUK18L2-fziWVFOQoxS0/edit?usp=sharing",
             "code": "AGR",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "Agrico"
         },
         "AWS": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/1NNfq6GFJKoJ7SOsAFjGZDqunOIwzdVESxffltSqexgI/edit?usp=sharing",
             "code": "AWS",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "AWS"
         },
         "CPI_CRM": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/1n4ecleRVs9ofCE4yjbJnxi9UzD3NRHTMAuWRbregZU4/edit?usp=sharing",
             "code": "CRM",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "CPI CRM"
         },
         "CPI_MOCA": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/1bSzroDfMB-51hxGJq04qYTAtipHb9uKhrGQ5g6BSk7c/edit?usp=sharing",
             "code": "MOCA",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "CPI MOCA"
         },
         "CPI_ORDER_PAKAN": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/17g0I0lyEdQzVWdW5HoPoPWHbsawlhn_n0G4Nxghb5fg/edit?usp=sharing",
             "code": "COP",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "CPI ORDER PAKAN"
         },
         "CPI_QR_PROMO": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/1zXXyzrTuZUQHs4U1I3-7TKJBM98P4Ia9_uMZHsaisi8/edit?usp=sharing",
             "code": "PRM",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "CPI QR PROMO"
         },
         "CTMS": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/1K4t7ICkEoxp-07_ZDcKop4L8DhgNFRmxy9lTca_D5G4/edit?usp=sharing",
             "code": "CTMS",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "CTMS"
         },
         "Dzikra":{
             "urlExcel": "https://docs.google.com/spreadsheets/d/1I7XHw6Bvgm60UidhReUSM6ZL9AOe4zvFh1wyRPHDKRQ/edit?usp=sharing",
             "code": "DZ",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "Dzikra"
         },
         "eCRF": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/1-8eRo6-RBcidPrkbV7ZHtGbAjKKi0ATlFzmfVAoAQaA/edit?usp=sharing",
             "code": "CRF",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "e-CRF"
         },
         "farm-v2":{
             "urlExcel": "https://docs.google.com/spreadsheets/d/1HgHyXmstOrY1FJsKRO6yk54gGqoKL4nVTJaLFoccemw/edit?usp=sharing",
             "code": "FRM",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "Farm Management"
         },
         "IPJ":{
             "urlExcel": "https://docs.google.com/spreadsheets/d/1G78G5HvJlOQOnqWCkElF68Ak_vGOwoTqVehZTg4r2JI/edit?usp=sharing",
             "code": "IPJ",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "IPJ"
         },
         "Joumpa": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/1Gta6uOZamwbxHY_pj8CH19zChRrCR6SwJmq8__Z1K6w/edit?usp=sharing",
             "code": "JMP",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "Joumpa"
         },
         "PE": {
             "urlExcel": "https://docs.google.com/spreadsheets/d/1VUGbWlCtJGhvKgE6zclWBnMzWO3IafA45wy0yvygp5Y/edit?usp=sharing",
             "code": "PE",
-            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"]
+            "dri": ["alfi.dwitama@inovasi360.id", "rizky.wahyu@inovasi360.id", "tiani@inovasi360.id"],
+            "name": "Production Enterprise"
         }
     }
 }
