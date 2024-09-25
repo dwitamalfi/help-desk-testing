@@ -72,6 +72,9 @@
             <div class="d-flex justify-content-center">
               <h3>Support Help Desk BIGIO</h3>
             </div>
+            <div class="d-flex justify-content-center">
+              <h3>(TJSL)</h3>
+            </div>
             <div class="row mt-3">
               <div class="col-sm-12">
                 <div class="form-group">
@@ -205,6 +208,7 @@
                     <input type="hidden" id="project-key" name="project"/>
                     <input type="hidden" id="excel-link" name="link_excel"/>
                     <input type="hidden" id="code-project" name="code_project"/>
+                    <input type="hidden" id="arr_receiver" name="arr_receiver"/>
                   </div>
                 </div>
               </div>
@@ -263,6 +267,7 @@
           const id = urlExcel.split('/d/')[1].split('/')[0];
           document.getElementById('excel-link').value = id;
           document.getElementById('code-project').value = data.projects[firstParam.value].code;
+          document.getElementById('arr_receiver').value = data.projects[firstParam.value].dri;
       })
       .catch(error => console.error('Error loading the JSON:', error));
 
@@ -311,7 +316,7 @@
 
       function fetchData(formObject) {
         fetch(
-          "https://script.google.com/macros/s/AKfycbzCFoYTSxUK2_snVO181hYXkVGyXocFFwB_ecO3NGs_fS7nndzCZlBPftgd7OJ9Ssj8yg/exec",
+          "https://script.google.com/macros/s/AKfycbzV8NzLE9eWhz5xokqJzfU3t20Wstta6q_hB2jW3zutMcopvpfOtxttxxovcbPvksP5_w/exec",
           {
             method: "POST",
             body: JSON.stringify(formObject),
